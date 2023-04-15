@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Price Prediction with LSTM</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <div class="input">
+        <h1>Stock Price Prediction with LSTM</h1>
+        <form method="post" action="/predict">
+            <label for="stock">Open Price:</label>
+            <input type="integer" id="stock" name="open" placeholder="Open Price">
+
+            <label for="stock">High Price:</label>
+            <input type="integer" id="stock" name="high" placeholder="High Price">
+
+            <label for="stock">Low Price:</label>
+            <input type="integer" id="stock" name="low" placeholder="Low Price">
+
+            <label for="stock">Volume:</label>
+            <input type="integer" id="stock" name="volume" placeholder="Volume">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <p> Predicted Stock Price: {{ prediction }}</p>
+</body>
+
+
+</html>
